@@ -1,6 +1,7 @@
 
 .header-section {
     min-height: 100vh;
+    width: 100%;
 }
 
 .header-text h1 {
