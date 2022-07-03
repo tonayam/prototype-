@@ -50,26 +50,41 @@
 }
 
 .popular-section img {
+    display: block;
+    margin: 0 auto;
     height: 180px;
+    max-width: fit-content;
     object-fit: cover;
     overflow: hidden;
-    padding: 2em 5em;
+    padding: 2em 3em;
 }
 
 .recommended-section .img-div {
     background-color: var(--whiteShade2);
 }
 
-.like-icon-1 path {
+/* .like-icon-1 path {
     color: var(--primaryShade5);
     fill:var(--primaryShade5);
-}
+} */
+
+.bi-heart-fill {
+    color: var(--primaryShade5);
+    cursor: pointer;
+  }
+  
 
 .rate-me .rating {
     fill: #FF9800;
 
 }
 
-.like-icon-2 path {
-    fill: var(--errorColor)
+/* .like-icon-2 path {
+    fill: var(--errorColor);
+} */
+
+@media screen  and (max-width: 600px) {
+    .deals-mobile{
+        font-size: 16px;
+    }
 }
