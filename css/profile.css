@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: var(--whiteShade4);
+}
+
+.active{
+    color:var(--secondaryShade1) !important
+}
+
 .addressInfo, .contactInfo{
     background-color: var(--whiteShade2);
 }
@@ -29,6 +37,11 @@
     color:#fff
 }
 
-.label{
+.label, .side-nav li a, .side-nav li i{
     color:var(--primaryShade3)
 }
+
+.logout{
+    color:var(--errorColor)!important
+}
+
