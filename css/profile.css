@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.addressInfo, .contactInfo{
+    background-color: var(--whiteShade2);
+}
+
+.button{
+    top:100px;
+    right:100px;
+    border-radius: 5px;
+    border: 1px solid var(--secondaryShade1);
+    color: var(--secondaryShade1)
+}
+
+.addressBook,.accountInfo{
+    color: var(--secondaryShade1)
+}
+
+.btn{
+    background-color: var(--secondaryShade1);
+    color:#fff
+}
+
+.btn:hover{
+    color:#fff
+}
+
+.label{
+    color:var(--primaryShade3)
+}
