@@ -16,11 +16,23 @@ body{
     background-color: var(--whiteShade2);
 }
 
+.contactInfo h6, .addressInfo h6{
+    font-size: clamp(18px, 2vw, 24px);
+}
+
+.contactInfo .body-text,  .addressInfo .body-text{
+    font-size: clamp(16px,2vw,18px);
+}
+ 
 .button{
-    top:100px;
-    right:100px;
+    top:80px;
+    right:60px;
     border-radius: 5px;
     border: 1px solid var(--secondaryShade1);
+    color: var(--secondaryShade1)
+}
+
+.fa-arrow-left{
     color: var(--secondaryShade1)
 }
 
@@ -45,3 +57,14 @@ body{
     color:var(--errorColor)!important
 }
 
+@media(max-width:426px){
+    .addressInfo .button{
+        right:20px;
+        top:130px;
+    }
+
+    .contactInfo .button{
+        right:20px;
+        top:100px
+    }
+}
