@@ -18,6 +18,7 @@
 
 .active{
     background-color: var(--secondaryShade1);
+    color:#fff;
 }
 
 .inactive{
@@ -36,6 +37,15 @@
 }
 .btn:hover{
     color:#fff
+}
+
+.eye{
+    top:8px;
+    right: 10px
+}
+
+.open{
+    display:none;
 }
 
 .register,.signin{
@@ -67,9 +77,33 @@
 }
 
 .paragraph{
-    font-size: 18px;
+    font-size: clamp(12px,2vw,18px);
 }
 
 input{
     box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.1);
+}
+
+.form-container h4{
+    font-size: clamp(24px,2vw, 40px);
+}
+
+@media(max-width:426px){
+    .lines::before{
+        width:35%
+    }
+    .lines::after{
+        width:35%
+    }
+    
+}
+
+@media(max-width:769px){
+    .lines::after{
+        width:40%
+    }
+
+    .lines::before{
+        width:40%
+    }
 }
