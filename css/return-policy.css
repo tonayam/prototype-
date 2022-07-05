@@ -1,0 +1,47 @@
+.bi-arrow-left, .bi-check-circle, .bi-dash, .header-6 {
+    color: var(--secondaryShade1);
+}
+
+.bi-plus {
+    color: var(--whiteShade1);
+    background-color: var(--secondaryShade1);
+}
+
+.bg-color {
+    background-color: var(--whiteShade1);
+}
+
+.bi-arrow-up-circle-fill, .file {
+    color: var(--primaryShade3);
+}
+
+.bi-arrow-up-circle-fill {
+    cursor: pointer;
+}
+
+input[type='radio']:after {
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+   
+}
+
+input[type='radio']:checked:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    top: 3.9px;
+    left: 5px;
+    position: relative;
+    background-color: var(--secondaryShade1);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+.upload-div {
+    border: 1px dashed #1F1F1F;
+    ;
+}
