@@ -19,6 +19,11 @@
     cursor: pointer;
 }
 
+.btn-bg {
+    background-color: var(--secondaryShade1);
+    color: var(--whiteShade1);
+}
+
 input[type='radio']:after {
     position: relative;
     background-color: #d1d3d1;
@@ -43,5 +48,15 @@ input[type='radio']:checked:after {
 
 .upload-div {
     border: 1px dashed #1F1F1F;
-    ;
 }
+
+.tracking-section {
+    margin-top: -65px;
+}
+
+@media screen and (max-width: 770px){
+    .tracking-section {
+        margin-top: 0px;
+    } 
+}
+    

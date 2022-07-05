@@ -27,7 +27,7 @@
 
 <body>
   <!-- NAVBAR CODE -->
-   <nav class="d-none d-md-flex align-items-center">
+   <!-- <nav class="d-none d-md-flex align-items-center">
     <div class="row w-100 px-5">
       <div class="col-md-4 col-6">
         <a href="../index.html">
@@ -49,9 +49,11 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
+
   <!-- mobile navbar -->
-  <nav class="mobile-nav d-md-none border">
+
+  <!-- <nav class="mobile-nav d-md-none border">
     <div class="container">
       <div class="row">
         <div class="col-3">
@@ -68,7 +70,8 @@
         </div>
       </div>
     </div>
-  </nav>
+  </nav> -->
+
   <div class="sidebar d-md-none">
     <ul class="d-flex flex-column list-unstyled FW-400">
       <li class="label-text"><i class="bi bi-x-lg text-danger fs-2 close"></i></li>
@@ -93,8 +96,8 @@
   <!-- RETURN ITEMS -->
   <section class="return-items my-5">
     <div class="container">
-      <div class="row">
-          <div class="col-lg-7 mt-4 bg-color px-4 py-4 shadow-sm rounded">
+      <div class="row px-3">
+          <div class=" col-lg-7 mt-4 bg-color px-4 py-4 shadow-sm rounded me-3">
             <div class="return-icon d-flex align-items-center my-3">
               <i class="bi bi-check-circle me-2 fs-4"></i>
               <h6 class="FW-500">To Return (2)</h6>
@@ -153,9 +156,9 @@
             </div>
           </div>
 
-        <div class="col-lg-4 mt-4 bg-color ms-3 pt-3 px-4 shadow-sm rounded">
+        <div class="col-lg-4 mt-4 bg-color py-3 px-4 shadow-sm rounded return-div">
           <h6 class="FW-600 text-center header-6 mb-4 mt-2">Reason for return</h6>
-          <div class="form-floating mx-auto">
+          <div class="form-floating mx-auto mb-3">
             <textarea class="form-control" placeholder="Customer changed their mind." id="floatingTextarea2" style="height: 195px"></textarea>
             <label for="floatingTextarea2">Customer changed their mind.</label>
           </div>
@@ -168,8 +171,8 @@
 
   <section class="shipping-option my-4">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-7 bg-color shadow-sm px-4 py-4">
+      <div class="row px-3">
+        <div class="col-lg-7 bg-color shadow-sm px-4 py-4 h-50 me-3 mb-3">
           <h6 class="FW-600">Return shipping options</h6>
           <div class="input-class d-flex align-items-center my-3">
             <input type="radio" name="shipping-option" value="1" style="height: 30px; width:30px;" class="">
@@ -186,13 +189,80 @@
           </div>
         </div>
        
-        <div class="col-lg-4 shadow-sm bg-color ms-3"></div>
+        <div class="col-lg-4 shadow-sm bg-color  px-4 py-4 rounded mb-5 summary">
+          <h6 class="FW-600 text-center header-6 mb-5">Summary Details</h6>
+          <div class="item FW-600 d-flex justify-content-between mx-4">
+            <p>Items</p>
+            <p>Price</p>
+          </div>
+          <div class="product d-flex justify-content-between mx-4">
+            <p>Camera drone</p>
+            <p>₦18,000</p>
+        </div>
+
+        <div class="product d-flex justify-content-between mx-4">
+            <p>Smart watch</p>
+            <p>₦36,000</p>
+          </div>
+
+          <div class="sub-total d-flex justify-content-between mx-4 FW-600">
+            <p>Sub Total</p>
+            <p>₦36,000</p>
+           </div>
+
+           <div class="fee d-flex justify-content-between mx-4">
+            <p>Fee</p>
+            <p>₦0.00 </p>
+           </div>
+           <hr>
+
+            <div class="total d-flex justify-content-between mx-4 FW-600">
+              <p>Total</p>
+              <p class="header-6">₦36,000</p>
+            </div>
+
+            <div class="div mx-auto text-center my-4">
+              <button class="btn btn-bg py-2 rounded btn-lg w-75" type="button">confirm return</button>
+            </div>
+
+            <div class="notification d-flex justify-content-center">
+              <input type="checkbox" name="notification" id="notification" class="me-2 notification-1">
+              <label for="notification" class="body-text-mini">Get Notification when successful</label>
+            </div>
+        </div>
+
+        <div class="col-lg-7 tracking-section">
+          <div 
+          class="main-tracking-div d-flex justify-content-between flex-column flex-md-row">
+            <div class="tracking-div-1">
+              <p class="FW-600">Tracking ID</p>
+              <input type="number">
+            </div>
+            <div class="shipping-div">
+              <p class="FW-600">Shipping Center</p>
+              <select class="border-1 py-1 " style="width:200px;">
+                <option>FedEx</option>
+                <option>Ups</option>
+                <option>DHL</option>
+                <option>Courier</option>
+              </select>
+            </div>
+        </div>
+
+        <div class="input-shipping my-5 d-flex align-items-center">
+          <input type="radio" name="shipping-option" value="1" style="height: 30px; width:30px;" class="me-2" id="">
+          <label for="" class="FW-400">
+            No shipping required
+            </label>
+        </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- FOOTER CODE -->
-  <footer class="p-5">
+
+   <footer class="p-5">
     <div class=" top row">
       <div class="first col-3 py-3">
         <h6 class="FW-600">10% off any product when you subscribe to our news</h6>
@@ -240,6 +310,7 @@
       </div>
     </div>
   </footer>
+
   <!-- BOOTSTRAP JAVASCRIPT -->
   <script src="../js/bootstrap.js"></script>
 
