@@ -67,7 +67,7 @@
     color: var(--primaryShade1);
 }
 
-.popular-section img {
+.popular-section img, .popular-mobile-section img {
     display: block;
     margin: 0 auto;
     height: 180px;
@@ -104,5 +104,9 @@
 @media screen  and (max-width: 600px) {
     .deals-mobile{
         font-size: 16px;
+    }
+
+    .header-text p {
+        font-size: 10px;
     }
 }

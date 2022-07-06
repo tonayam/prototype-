@@ -73,9 +73,31 @@
                     </div>
                 </div>
                 <!-- Slide 2 -->
-                <div class="swiper-slide slider-2"></div>
+                <div class="swiper-slide slider-2  d-flex flex-column justify-content-center">
+                  <!--HEADER-TEXT-->
+                  <div class="container header-text">
+                    <h1 class="FW-700">
+                      Lorem ipsum dolor<br> sit amet.
+                    </h1>
+                    <p class="FW-400 mt-1 body-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Voluptate, libero?
+                    </p>
+                    <a href="#" class="btn btn-lg header-shop-btn  mt-4 body-text px-5 py-2">Learn more</a>
+                  </div>
+                </div>
                 <!-- Slide 3 -->
-                <div class="swiper-slide slider-3"></div>
+                <div class="swiper-slide slider-3  d-flex flex-column justify-content-center">
+                  <!--HEADER-TEXT-->
+                  <div class="container header-text">
+                    <h1 class="FW-700">
+                      Lorem ipsum dolor<br> sit amet.
+                    </h1>
+                    <p class="FW-400 mt-1 body-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Voluptate, libero?
+                    </p>
+                    <a href="#" class="btn btn-lg header-shop-btn  mt-4 body-text px-5 py-2">Buy now</a>
+                  </div>
+                </div>
               </div>
               <div class="swiper-pagination mt-4"></div>
             </div>
@@ -93,8 +115,66 @@
       </div>
    </section>
 
+   <!--Best deals of the week mobile slide codes-->
+    <section class="container mobile-section d-md-none d-block">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <div class="card rounded-top" >
+              <a href="#">
+                <img src="images/home-images/apple-airpod.png" class="card-img-top img-responsive w-100 h-100" alt="Apple Airpod">
+              </a>
+              <div class="card-body">
+                <h6 class="FW-600">Apple airpod pro</h6>
+                <div class="pricing d-flex justify-content-start">
+                  <h6 class="FW-600 me-5 cat-color">₦65,000</h6>
+                  <h6 class="FW-600 text-decoration-line-through striked-price"> ₦80,000</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="card rounded-top">
+              <a href="#">
+                <img src="images/home-images/wireless-headset.png" class="card-img-top img-responsive w-100 h-100" alt="wireless-headset">
+              </a>
+              <div class="card-body">
+                <h6 class="FW-600">Wireless PC headset</h6>
+                <div class="pricing d-flex justify-content-start">
+                  <h6 class="FW-600 me-5 cat-color"> ₦50,000</h6>
+                  <h6 class="FW-600 text-decoration-line-through striked-price">₦75,000</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card rounded-top">
+              <a href="#">
+                <img src="images/home-images/macbook.png" class="card-img-top img-responsive w-100 h-100" alt="Macbook">
+              </a>
+              <div class="card-body">
+                <h6 class="FW-600">Macbook Pro</h6>
+                <div class="pricing d-flex justify-content-start">
+                  <h6 class="FW-600 me-3 cat-color">₦500,000</h6>
+                  <h6 class="FW-600 text-decoration-line-through striked-price">₦590, 000</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
    <!-- PRODUCTS CODE -->
-   <main class="main-section">
+   <main class="main-section d-none d-md-block">
     <div class="container">
         <div class="row justify-content-center align-items-center">
           <!--Apple Airpod-->
@@ -157,11 +237,121 @@
     </div>
  </section>
 
-  <!--CATEGORIES CODE-->
-  <section class="popular-section">
+  <!-- POPULAR CATEGORIES MOBILE VIEW SLIDE -->
+
+  <section class="popular-mobile-section d-md-none d-block">
     <div class="container">
       <div class="row justify-content-center align-items-center">
-        <!--DESKTOP CATEGORY 1-->
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!--Laptop-->
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="col">
+                <div class="card border-2">
+                  <a href="#"><img src="images/home-images/laptops.png" class="card-img-top mb-0 " alt="laptop"></a>
+                  <div class="card-body text-center mt-0">
+                    <p class="card-text popular-cat-cat-text fw-bold">Laptops</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Desktop-->
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="col">
+                <div class="card border-2">
+                  <a href="#"><img src="images/home-images/desktops.png" class="card-img-top  mb-0 img-responsive " alt="Desktop"></a>
+                  <div class="card-body text-center mt-0">
+                    <p class="card-text popular-cat-cat-text fw-bold">Desktops</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--smartwatch-->
+            <div class="carousel-item">
+              <div class="col">
+                <div class="card border-2">
+                  <a href="#"><img src="images/home-images/smartwatches.png" class="card-img-top mb-0 img-fluid" alt="Smartwatch"></a>
+                  <div class="card-body text-center mt-0">
+                    <p class="card-text popular-cat-cat-text fw-bold">Smartwatches</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Phone Tablets-->
+            <div class="carousel-item">
+              <div class="col">
+                <div class="card border-2">
+                  <a href="#"><img src="images/home-images/phonetablets.png" class="card-img-top mb-0 img-fluid" alt="phone Tablet"></a>
+                  <div class="card-body text-center mt-0">
+                    <p class="card-text popular-cat-cat-text fw-bold">Phone Tablets</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Drones-->
+            <div class="carousel-item">
+              <div class="col">
+
+                <div class="card border-2">
+                  <a href="#"><img src="images/home-images/drones.png" class="card-img-top mb-0 img-fluid" alt="drone"></a>
+                  <div class="card-body text-center mt-0">
+                    <p class="card-text popular-cat-cat-text fw-bold">Drones</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Earpods-->
+            <div class="carousel-item">
+              <div class="col">
+                <div class="card border-2">
+                  <a href="#"><img src="images/home-images/earpods.png" class="card-img-top mb-0 img-fluid" alt="earpod"></a>
+                  <div class="card-body text-center mt-0">
+                    <p class="card-text popular-cat-cat-text fw-bold">Earpods</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Mobilephones-->
+            <div class="carousel-item">
+              <div class="col">
+                <div class="card border-2">
+                  <a href="#"><img src="images/home-images/mobile-phones.png" class="card-img-top mb-0 img-fluid" alt="mobile phone"></a>
+                  <div class="card-body text-center mt-0">
+                    <p class="card-text popular-cat-cat-text fw-bold">Mobile Phones</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Headphones-->
+            <div class="carousel-item">
+              <div class="col">
+                <div class="card border-2">
+                  <a href="#"><img src="images/home-images/headphones.png" class="card-img-top mb-0 img-fluid" alt="headphone"></a>
+                  <div class="card-body text-center mt-0">
+                    <p class="card-text popular-cat-cat-text fw-bold">Headphones</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+ </section>
+
+  <!--CATEGORIES CODE-->
+  <section class="popular-section d-none d-md-block">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <!--LAPTOP CATEGORY 1-->
         <div class="col-11 col-md-6 col-lg-3 my-2">
           <div class="card border-2">
             <a href="#"><img src="images/home-images/laptops.png" class="card-img-top mb-0 " alt="laptop"></a>
@@ -683,7 +873,13 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "1",
       spaceBetween: 30,
+      loop: true,
+      autoplay: {
+                delay: 4500,
+                disableOnInteraction: false,
+              },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
