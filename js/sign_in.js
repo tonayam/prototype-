@@ -3,9 +3,9 @@ let loginform = document.querySelector(".login");
 let openeye = document.querySelector(".open");
 let closeeye = document.querySelector(".close");
 let passwordInput = document.getElementById("password");
-let passwordInput1 = document.getElementById("password1")
+let passwordInput1 = document.getElementById("password1");
 let signin = document.querySelector(".signin");
-let register = document.querySelector(".register")
+let register = document.querySelector(".register");
 
 
 function create(){
@@ -39,6 +39,7 @@ function password(){
         closeeye.style.display = "block"
 
     }
+
     if (passwordInput1.type === "password"){
         passwordInput1.type = "text"
         openeye.style.display = "block"
