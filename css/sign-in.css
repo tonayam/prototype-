@@ -23,6 +23,7 @@
 
 .inactive{
     background-color: var(--whiteShade2);
+    color:var(--secondaryShade1);
 }
 
 .form-container{
@@ -46,14 +47,6 @@
 
 .open{
     display:none;
-}
-
-.register,.signin{
-    color:var(--secondaryShade1)
-}
-
-.register:hover,.signin:hover{
-    color:#fff
 }
 
 .fa-solid{
