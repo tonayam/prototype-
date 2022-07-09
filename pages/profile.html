@@ -96,16 +96,19 @@
           <ul class="d-flex flex-column list-unstyled FW-400 mt-5 me-2">
             <li class="label-text mb-3">
               <i class="fa-solid fa-user pe-3 active"></i>
-              <span><a href="./" class="FW-600 active">My Account</a></li></span>
+              <span onclick= "account()"><a href="" class="FW-600 myAccount active">My Account</a></li></span>
             <li class="label-text mb-3">
               <i class="fa-solid fa-truck pe-3"></i>
-              <span><a href="./" class="Fw-400">Orders</a></span></li>
+              <span onclick="orders()"><a href="./" class="Fw-400">Orders</a></span></li>
             <li class="label-text mb-3">
-              <i class="fa-solid fa-credit-card pe-3"></i>
-              <span><a href="./" class="FW-400">Payment methods</a></span></li>
+              <span onclick="payment()">
+                <i class="fa-solid fa-credit-card pe-3"></i>
+                <a href="./" class="FW-400">Payment methods</a>
+              </span>
+            </li>
             <li class="label-text mb-3">
               <i class="fa-solid fa-heart pe-3"></i>
-              <span><a href="./" class="FW-400">Saved</a></span></li>
+              <span onclick= "saved()"><a href="" class="FW-400 savedItems">Saved</a></span></li>
             <li class="label-text mb-3">
               <i class="fa-solid fa-arrow-right-from-bracket pe-3 logout"></i>
               <span><a href="./sign-in.html" class="FW-400 logout">Logout</a></span></li>
@@ -113,32 +116,109 @@
         </div>
       </div>
       <div class="col-lg-8 px-5 mt-5">
-        <h5 class="FW-600 mb-3">My account</h5>
-        <h6 class="FW-600 accountInfo">Account Information</h6>
-        <!--<div class="row">-->
-        <div class="mb-5 col-12 contactInfo p-5 position-relative border-rounded-top">
-          <h6 class="FW-500 mb-3">Contact Information</h6>
-          <div class="mb-3">
+        <div class="account">
+          <h5 class="FW-600 mb-3">My account</h5>
+          <h6 class="FW-600 accountInfo">Account Information</h6>
+          <div class="mb-5 col-12 contactInfo p-5 position-relative border-rounded-top">
+           <h6 class="FW-500 mb-3">Contact Information</h6>
+           <div class="mb-3">
             <span class="body-text FW-400 label">Name:</span><span class="ps-2 FW-500 label-text">John snow</span>
-          </div>
-          <div class="mb-5">
+           </div>
+           <div class="mb-5">
             <span class="body-text FW-400 label">Email Address:</span><span class="ps-2 FW-500 label-text">Johnsnow@gmail.com</span>
+           </div>
+           <button class="btn px-3">Change Contact</button>
+           <div><button class="px-3 py-2 button position-absolute FW-600"><i class="fa-solid fa-pen me-2"></i>Edit</button></div>
           </div>
-          <button class="btn px-3">Change Contact</button>
-          <div><button class="px-3 py-2 button position-absolute FW-600"><i class="fa-solid fa-pen me-2"></i>Edit</button></div>
-        </div>
-       <!-- </div>-->
+       
 
 
-        <h6 class="FW-600 mb-3 addressBook">Address Book</h6>
-        <!--<div class="row">-->
-        <div class="mb-5 col-12 addressInfo p-5 position-relative">
-          <h6 class="FW-500">Delivery Address</h6>
-          <Address class="body-text FW-400 mb-5">No 6, boulevard street<br> somewhere along London train station <br> Canada</Address>
-          <button class="btn px-3">Change Address</button>
-          <div><button class="px-3 py-2 button position-absolute FW-600"><i class="fa-solid fa-pen me-2"></i>Edit</button></div>  
+          <h6 class="FW-600 mb-3 addressBook">Address Book</h6>
+          <div class="mb-5 col-12 addressInfo p-5 position-relative">
+            <h6 class="FW-500">Delivery Address</h6>
+            <Address class="body-text FW-400 mb-5">No 6, boulevard street<br> somewhere along London train station <br> Canada</Address>
+            <button class="btn px-3">Change Address</button>
+            <div><button class="px-3 py-2 button position-absolute FW-600"><i class="fa-solid fa-pen me-2"></i>Edit</button></div>  
+          </div>
         </div>
-        <!--</div>-->
+
+        <div class="saved">
+          <h5 class="FW-600 mb-3">Saved(5)</h5>
+          <div class="col-12 d-flex justify-between items rounded py-5 mb-3">
+            <div class="col-3">
+              <img src="">
+            </div>
+            <div class="me-2 col-5">
+              <p class="mb-5">Samsung Galaxy S22 5G 128GB</p>
+              <p class="FW-500">#400,000</p>
+            </div>
+            <div class="col-4">
+              <span>
+                <button class="px-5 py-2 rounded-top mt-4"> Add to cart</button>
+              </span>
+            </div>
+          </div>
+
+          <div class="col-12 d-flex justify-between items rounded-top py-5 mb-3">
+            <div class="col-3">
+              <img src="">
+            </div>
+            <div class="me-2 col-5">
+              <p class="mb-5">Samsung Galaxy Z Flip3 5G</p>
+              <p class="FW-500">#400,000</p>
+            </div>
+            <div class="col-4">
+              <span>
+                <button class="px-5 py-2 rounded-top mt-4"> Add to cart</button>
+              </span>
+            </div>
+          </div>
+
+          <div class="col-12 d-flex justify-between items rounded-top py-5 mb-3">
+            <div class="col-3">
+              <img src="">
+            </div>
+            <div class="me-2 col-5">
+              <p class="mb-5">iPhone 12 pro max</p>
+              <p class="FW-500">#400,000</p>
+            </div>
+            <div class="col-4">
+              <span>
+                <button class="px-5 py-2 rounded-top mt-4"> Add to cart</button>
+              </span>
+            </div>
+          </div>
+
+          <div class="col-12 d-flex justify-between items rounded-top py-5 mb-3">
+            <div class="col-3">
+              <img src="">
+            </div>
+            <div class="me-2 col-5">
+              <p class="mb-5">Samsung Galaxy S22 5G 128GB</p>
+              <p class="FW-500">#400,000</p>
+            </div>
+            <div class="col-4">
+              <span class="mt-5">
+                <button class="px-5 py-2 rounded-top mt-4"> Add to cart</button>
+              </span>
+            </div>
+          </div>
+
+          <div class="col-12 d-flex justify-between items rounded-top py-5 mb-5">
+            <div class="col-3">
+              <img src="">
+            </div>
+            <div class="me-2 col-5">
+              <p class="mb-5">Airpod for android & ios</p>
+              <p class="FW-500">#20,000</p>
+            </div>
+            <div class="col-4">
+              <span>
+                <button class="px-5 py-2 rounded-top mt-4"> Add to cart</button>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -200,6 +280,7 @@
 
   <!-- CUSTOM JAVASCRIPT -->
   <script src="../js/navbar.js"></script>
+  <script src="../js/profile.js"></script>
 
 </body>
 

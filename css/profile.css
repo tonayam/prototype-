@@ -8,19 +8,37 @@ body{
     background-color: var(--whiteShade4);
 }
 
+.saved{
+    display: none;
+}
+
+.show{
+    display:block;
+}
+
+.hide{
+    display:none;
+}
+
 .active{
     color:var(--secondaryShade1) !important
 }
 
-.addressInfo, .contactInfo{
+.addressInfo, .contactInfo, .items{
     background-color: var(--whiteShade2);
 }
+
+.items{
+    border:1px solid rgba(17, 17, 17, 0.375)
+}
+
+
 
 .contactInfo h6, .addressInfo h6{
     font-size: clamp(18px, 2vw, 24px);
 }
 
-.contactInfo .body-text,  .addressInfo .body-text{
+.contactInfo .body-text,  .addressInfo .body-text .items p{
     font-size: clamp(16px,2vw,18px);
 }
  
@@ -55,6 +73,12 @@ body{
 
 .logout{
     color:var(--errorColor)!important
+}
+
+.saved button{
+    background-color: var(--secondaryShade1);
+    color:#fff;
+    border:none
 }
 
 @media(max-width:426px){
