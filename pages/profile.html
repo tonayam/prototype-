@@ -96,22 +96,20 @@
           <ul class="d-flex flex-column list-unstyled FW-400 mt-5 me-2">
             <li class="label-text mb-3">
               <i class="fa-solid fa-user pe-3 active"></i>
-              <span onclick= "account()"><a href="" class="FW-600 myAccount active">My Account</a></li></span>
+              <span onclick= "account()" class="myAccount active FW-600">My Account</li></span>
             <li class="label-text mb-3">
               <i class="fa-solid fa-truck pe-3"></i>
-              <span onclick="orders()"><a href="./" class="Fw-400">Orders</a></span></li>
+              <span onclick="orders()">Orders</span></li>
             <li class="label-text mb-3">
-              <span onclick="payment()">
                 <i class="fa-solid fa-credit-card pe-3"></i>
-                <a href="./" class="FW-400">Payment methods</a>
-              </span>
+                <span onclick="payment()" class="FW-400">Payment methods</span>
             </li>
-            <li class="label-text mb-3">
+            <li class="label-text mb-3 savedItems">
               <i class="fa-solid fa-heart pe-3"></i>
-              <span onclick= "saved()"><a href="" class="FW-400 savedItems">Saved</a></span></li>
+              <span onclick= "saved()" class="savedItems FW-400">Saved</span></li>
             <li class="label-text mb-3">
               <i class="fa-solid fa-arrow-right-from-bracket pe-3 logout"></i>
-              <span><a href="./sign-in.html" class="FW-400 logout">Logout</a></span></li>
+              <span class="FW-400 logout">Logout</span></li>
           </ul>
         </div>
       </div>
@@ -144,77 +142,77 @@
 
         <div class="saved">
           <h5 class="FW-600 mb-3">Saved(5)</h5>
-          <div class="col-12 d-flex justify-between items rounded py-5 mb-3">
-            <div class="col-3">
-              <img src="">
+          <div class="col-12 d-flex justify-between items rounded py-3 px-3 mb-3">
+            <div class="col-lg-3 col-md-10">
+              <img src="../images/profile-images/samsung.png" class="img-fluid">
             </div>
-            <div class="me-2 col-5">
-              <p class="mb-5">Samsung Galaxy S22 5G 128GB</p>
-              <p class="FW-500">#400,000</p>
+            <div class="me-2 mt-3 col-lg-5 col-md-10">
+              <p class="mb-5 FW-400 description">Samsung Galaxy S22 5G 128GB</p>
+              <p class="FW-600 price">#400,000</p>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-10">
               <span>
-                <button class="px-5 py-2 rounded-top mt-4"> Add to cart</button>
+                <button class="px-5 py-2 rounded-top mt-4 FW-600"> Add to cart</button>
               </span>
             </div>
           </div>
 
-          <div class="col-12 d-flex justify-between items rounded-top py-5 mb-3">
-            <div class="col-3">
-              <img src="">
+          <div class="col-12 d-flex justify-between items rounded-top py-3 px-3 mb-3">
+            <div class="col-lg-3 col-md-10">
+              <img src="../images/profile-images/samsungfold.png" class="img-fluid">
             </div>
-            <div class="me-2 col-5">
-              <p class="mb-5">Samsung Galaxy Z Flip3 5G</p>
-              <p class="FW-500">#400,000</p>
+            <div class="me-2 mt-3 col-lg-5 col-md-10">
+              <p class="mb-5 FW-400 description">Samsung Galaxy Z Flip3 5G</p>
+              <p class="FW-600 price">#400,000</p>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-10">
               <span>
-                <button class="px-5 py-2 rounded-top mt-4"> Add to cart</button>
+                <button class="px-5 py-2 rounded-top mt-4 FW-600"> Add to cart</button>
               </span>
             </div>
           </div>
 
-          <div class="col-12 d-flex justify-between items rounded-top py-5 mb-3">
-            <div class="col-3">
-              <img src="">
+          <div class="col-12 d-flex justify-between items rounded-top py-3 px-3 mb-3">
+            <div class="col-lg-3 col-md-10">
+              <img src="../images/profile-images/iphone.png" class="img-fluid">
             </div>
-            <div class="me-2 col-5">
-              <p class="mb-5">iPhone 12 pro max</p>
-              <p class="FW-500">#400,000</p>
+            <div class="me-2 mt-3 col-lg-5 col-md-10">
+              <p class="mb-5 FW-400 description">iPhone 12 pro max</p>
+              <p class="FW-600 price">#400,000</p>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-10">
               <span>
-                <button class="px-5 py-2 rounded-top mt-4"> Add to cart</button>
+                <button class="px-5 py-2 rounded-top mt-4 FW-600"> Add to cart</button>
               </span>
             </div>
           </div>
 
-          <div class="col-12 d-flex justify-between items rounded-top py-5 mb-3">
-            <div class="col-3">
-              <img src="">
+          <div class="col-12 d-flex justify-between items rounded-top py-3 px-3 mb-3">
+            <div class="col-lg-3 col-md-10">
+              <img src="../images/profile-images/tecno.png" class="img-fluid">
             </div>
-            <div class="me-2 col-5">
-              <p class="mb-5">Samsung Galaxy S22 5G 128GB</p>
-              <p class="FW-500">#400,000</p>
+            <div class="me-2 mt-3 col-lg-5 col-md-10">
+              <p class="mb-5 FW-400 description">Samsung Galaxy S22 5G 128GB</p>
+              <p class="FW-600 price">#400,000</p>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-10">
               <span class="mt-5">
-                <button class="px-5 py-2 rounded-top mt-4"> Add to cart</button>
+                <button class="px-5 py-2 rounded-top mt-4 FW-600"> Add to cart</button>
               </span>
             </div>
           </div>
 
-          <div class="col-12 d-flex justify-between items rounded-top py-5 mb-5">
-            <div class="col-3">
-              <img src="">
+          <div class="col-12 d-flex justify-between items rounded-top py-3 px-3 mb-5">
+            <div class="col-lg-3 col-md-10">
+              <img src="../images/profile-images/earpod.png" class="img-fluid">
             </div>
-            <div class="me-2 col-5">
-              <p class="mb-5">Airpod for android & ios</p>
-              <p class="FW-500">#20,000</p>
+            <div class="me-2 mt-3 col-lg-5 col-md-10">
+              <p class="mb-5 FW-400 description">Airpod for android & ios</p>
+              <p class="FW-600 price">#20,000</p>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-10">
               <span>
-                <button class="px-5 py-2 rounded-top mt-4"> Add to cart</button>
+                <button class="px-5 py-2 rounded-top mt-4 FW-600"> Add to cart</button>
               </span>
             </div>
           </div>

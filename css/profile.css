@@ -29,17 +29,25 @@ body{
 }
 
 .items{
-    border:1px solid rgba(17, 17, 17, 0.375)
+    border:1px solid #b4b4b4
 }
 
-
+.items button{
+    font-size: clamp(12px,2vw,14px);
+}
 
 .contactInfo h6, .addressInfo h6{
     font-size: clamp(18px, 2vw, 24px);
 }
 
-.contactInfo .body-text,  .addressInfo .body-text .items p{
+.contactInfo .body-text,  .addressInfo .body-text .items .price{
     font-size: clamp(16px,2vw,18px);
+    color:var(--primaryShade1)
+}
+
+.items .description{
+    font-size: clamp(12px,2vw, 14px);
+    color:var(--primaryShade1)
 }
  
 .button{
@@ -90,5 +98,16 @@ body{
     .contactInfo .button{
         right:20px;
         top:100px
+    }
+
+    .items{
+        flex-direction: column;
+    }
+
+}
+
+@media(max-width:769px){
+    .items{
+        flex-direction: column;
     }
 }
