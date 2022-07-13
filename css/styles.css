@@ -103,10 +103,31 @@
 
 @media screen  and (max-width: 600px) {
     .deals-mobile{
-        font-size: 16px;
+        font-size: 16px !important;
     }
 
     .header-text p {
-        font-size: 10px;
+        font-size: 10px !important;
+    }
+
+    .mobile-text {
+        font-size: 12px !important;
+    }
+
+    .footer-text-1 {
+        font-size: 9px !important;
+    }
+
+    .price-text {
+        font-size: 12px !important;
+    }
+
+    .bi-star-fill {
+        width: 10px !important;
+    
+    }
+
+    .bi-heart-fill {
+        width: 14px !important;
     }
 }
