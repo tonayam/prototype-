@@ -1,0 +1,51 @@
+{
+    "users": [{
+            "user1": "stanley Egbele",
+            "gmail": "stanley@gmail.com",
+            "img": " '../images/admin-user images/Ellipse 463.png'",
+            "role": "Inventory",
+            "status": true,
+            "id": 1
+        },
+        {
+            "user1": "Justina Funke",
+            "gmail": "Funke12@gmail.com",
+            "img": " '../images/admin-user images/whitAnBlHair.png'",
+            "role": "Inventory",
+            "status": true,
+            "id": 2
+        },
+        {
+            "user1": "Debby stella",
+            "gmail": "Stella34@gmail.com",
+            "img": " '../images/admin-user images/Ellipse 463.png'",
+            "role": "Inventory",
+            "status": false,
+            "id": 3
+        },
+        {
+            "user1": "Esther Adeshewa",
+            "gmail": "dewa2@gmail.com",
+            "img": " '../images/admin-user images/red shirtFemale.png'",
+            "role": "Inventory",
+            "status": false,
+            "id": 4
+        },
+        {
+            "user1": "Chudi Ekene",
+            "gmail": "Chudieka@gmail.com",
+            "img": " '../images/admin-user images/ashsuitDude.png'",
+            "role": "Payment",
+            "status": true,
+            "id": 5
+        },
+        {
+            "user1": "Davide Ajibade",
+            "gmail": "Ajibade@gmail.com",
+            "img": " '../images/admin-user images/Ellipse glass male.png'",
+            "role": "Inventory",
+            "status": true,
+            "id": 6
+        }
+    ]
+}

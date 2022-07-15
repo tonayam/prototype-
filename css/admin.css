@@ -1,0 +1,52 @@
+.text-blue {
+    color: #3f51b5;
+}
+
+.circle {
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    background-color: transparent;
+    background-color: #198754;
+}
+
+.circle.bg-red {
+    background-color: #dc3545;
+}
+
+.inactive .col-2 .status .row .mt-2 .circle {
+    background-color: #dc3545;
+}
+
+.name {
+    margin-left: 10px;
+}
+
+.admin:nth-child(2n + 1) {
+    background-color: rgb(247, 245, 245);
+}
+
+.bi {
+    cursor: pointer;
+}
+
+.form-control {
+    background: #e5e5e5;
+    color: #000;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
